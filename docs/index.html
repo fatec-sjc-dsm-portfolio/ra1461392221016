@@ -1,14 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean - Portfólio</title>
-</head>
-<body>
-    <h1>
-        Portfólio - Jean Lucas (RA: 1461392221016)
-    </h1>
-    <img src="assets/imgs/foto_principal.png" alt="">
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Jean Lucas</title>
+    <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/imgs/icons/favicon.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <style>
+      #hello-text {
+        transition: opacity 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfólio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-dark text-white text-center py-5">
+      <h1 class="display-4">Jean Lucas de Faria Silva</h1>
+      <p class="lead" id="hello-text">Hello World!</p>
+    </header>
+
+    <main class="container my-5">
+      <!-- Seção 1: Apresentação Pessoal -->
+      <section id="sobre" class="mb-5">
+        <h2 class="mb-4">Apresentação Pessoal</h2>
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center">
+            <img src="assets/imgs/main_pp.png" class="rounded-circle img-fluid" alt="Foto de Jean Lucas" />
+          </div>
+          <div class="col-md-9">
+            <p>
+              Sou <strong>Jean Lucas de Faria Silva</strong>, aluno da
+              <strong>FATEC São José dos Campos – Prof. Jessen Vidal</strong>, cursando
+              <strong>Desenvolvimento de Software Multiplataforma</strong> desde 2022. Através da metodologia
+              API (Aprendizagem por Projetos Integrados), tenho participado de projetos que simulam cenários
+              reais do mercado de trabalho, promovendo meu crescimento técnico e interpessoal.
+            </p>
+            <p>
+              Como desenvolvedor, me especializei em soluções web e mobile, integração de sistemas, machine
+              learning aplicado a imagens e práticas de DevOps. Estou preparado para atuar em ambientes
+              colaborativos, com foco em resultados e melhoria contínua.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 2: Projetos Acadêmicos e Profissionais -->
+      <section id="projetos" class="mb-5">
+        <h2 class="mb-4">Projetos Acadêmicos e Profissionais</h2>
+        <div class="accordion" id="accordionProjetos">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+              >
+                OctoplusBank - Internet Banking (2022)
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionProjetos">
+              <div class="accordion-body">
+                <p>
+                  Aplicação com autenticação, operações bancárias e hierarquia de usuários. <br />
+                  Desenvolvida em Python/Flask com banco MySQL, hospedada na AWS. Envolveu design de
+                  interface, responsividade e integração de APIs.
+                </p>
+                <strong>Tecnologias:</strong> Python, Flask, MySQL, HTML/CSS/JS, AWS<br />
+                <a href="https://github.com/Octoplus-Group/OctoplusBank" target="_blank">
+                  <img
+                    src="assets/imgs/projects/octoplusbank.png"
+                    class="img-fluid mt-3 rounded"
+                    style="max-width: 50%; cursor: pointer"
+                    alt="Imagem do projeto OctoplusBank"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 3: Habilidades e Áreas de Atuação -->
+      <section id="habilidades">
+        <h2 class="mb-4">Áreas de Atuação e Habilidades</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Áreas de Atuação</h5>
+            <ul>
+              <li>Desenvolvimento Web (React, Node.js, Flask)</li>
+              <li>Desenvolvimento Mobile (Flutter)</li>
+              <li>Integração de APIs e backend</li>
+              <li>Processamento de imagens e Machine Learning</li>
+              <li>DevOps e pipelines de CI/CD</li>
+              <li>Banco de dados SQL e NoSQL</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Habilidades Técnicas e Soft Skills</h5>
+            <ul>
+              <li>
+                <strong>Hard Skills:</strong> React, Flutter, Node.js, Java, Python, Spring Boot, MongoDB,
+                PostgreSQL, MySQL, Firebase, AWS, YOLO, Roboflow, Git, Figma
+              </li>
+              <li>
+                <strong>Soft Skills:</strong> Comunicação assertiva, Trabalho em equipe, Resiliência,
+                Organização, Proatividade, Empatia, Visão de negócio
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 4: Contatos -->
+      <section id="contato" class="text-center mt-5">
+        <h2 class="mb-4">Redes Sociais</h2>
+        <a href="https://www.linkedin.com/in/jeanlfs" target="_blank" class="mx-3">
+          <img src="assets/imgs/icons/linkedin.png" alt="LinkedIn" width="40" />
+        </a>
+        <a href="https://github.com/jeejdev" target="_blank" class="mx-3">
+          <img src="assets/imgs/icons/github.png" alt="GitHub" width="40" />
+        </a>
+      </section>
+
+      <button
+        id="btn-top"
+        class="btn btn-primary position-fixed"
+        style="bottom: 30px; right: 30px; display: none; z-index: 1000"
+      >
+        ↑ Topo
+      </button>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <small>© 2025 Jean Lucas de Faria Silva | Desenvolvedor Multiplataforma</small>
+    </footer>
+
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Scroll suave
+      document.querySelectorAll('a.nav-link[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute("href"))
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+        })
+      })
+
+      // Realce do item ativo da navbar com base no scroll
+      const sections = document.querySelectorAll("section")
+      const navLinks = document.querySelectorAll(".nav-link")
+
+      window.addEventListener("scroll", () => {
+        let current = ""
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id")
+          }
+        })
+        navLinks.forEach((link) => {
+          link.classList.remove("active")
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active")
+          }
+        })
+
+        // Botão "voltar ao topo"
+        const btnTop = document.getElementById("btn-top")
+        btnTop.style.display = window.scrollY > 300 ? "block" : "none"
+      })
+
+      document.getElementById("btn-top").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      })
+    </script>
+    <script>
+      const texts = [
+        "Hola Mundo!",
+        "Bonjour le Monde!",
+        "Hallo Welt!",
+        "Ciao Mondo!",
+        "Olá Mundo!",
+        "こんにちは世界！",
+        "안녕하세요 세계!",
+        "你好，世界！",
+        "Hello World!",
+      ]
+      let i = 0
+      setInterval(() => {
+        const textEl = document.getElementById("hello-text")
+        textEl.style.opacity = 0
+        setTimeout(() => {
+          textEl.textContent = texts[i]
+          textEl.style.opacity = 1
+          i = (i + 1) % texts.length
+        }, 500)
+      }, 2500)
+    </script>
+  </body>
 </html>
