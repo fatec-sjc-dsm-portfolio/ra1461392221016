@@ -6,7 +6,7 @@
     <title>Portfólio | Jean Lucas</title>
     <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/imgs/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/icons/favicon.ico" type="image/x-icon" />
     <script defer src="script.js"></script>
     <style>
       #hello-text {
@@ -29,6 +29,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiência Profissional</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#habilidades">Habilidades</a>
@@ -71,10 +74,13 @@
         </div>
       </section>
 
-      <!-- Seção 2: Projetos Acadêmicos e Profissionais -->
+      <!-- Seção 2: Projetos -->
       <section id="projetos" class="mb-5">
-        <h2 class="mb-4">Projetos Acadêmicos e Profissionais</h2>
-        <div class="accordion" id="accordionProjetos">
+        <h2 class="mb-4">Projetos</h2>
+
+        <div class="alert alert-primary" role="alert">Projetos Acadêmicos</div>
+
+        <div class="accordion mb-4" id="accordionProjetosAcademicos">
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading1">
               <button
@@ -86,15 +92,31 @@
                 OctoplusBank - Internet Banking (2022)
               </button>
             </h2>
-            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionProjetos">
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionProjetosAcademicos"
+            >
               <div class="accordion-body">
                 <p>
-                  Aplicação com autenticação, operações bancárias e hierarquia de usuários. <br />
+                  <strong>Descrição do projeto:</strong><br />
+                  Aplicação com autenticação, operações bancárias e hierarquia de usuários.<br />
                   Desenvolvida em Python/Flask com banco MySQL, hospedada na AWS. Envolveu design de
                   interface, responsividade e integração de APIs.
                 </p>
-                <strong>Tecnologias:</strong> Python, Flask, MySQL, HTML/CSS/JS, AWS<br />
-                <a href="https://github.com/Octoplus-Group/OctoplusBank" target="_blank">
+                <p>
+                  <strong>Tecnologias:</strong><br />
+                  Python, Flask, MySQL, HTML/CSS/JS, AWS
+                </p>
+                <p>
+                  <strong>Minhas contribuições:</strong><br />
+                  No projeto OctoplusBank, atuei principalmente no desenvolvimento do front-end, implementando
+                  o layout com HTML e CSS e criando funcionalidades importantes em JavaScript, como máscaras
+                  de campos e integração de busca de endereço via CPF. Também realizei ajustes pontuais no
+                  backend e na modelagem do banco de dados para garantir o correto funcionamento das operações
+                  bancárias.
+                </p>
+                <a href="https://github.com/jeejdev/OctoplusBank" target="_blank">
                   <img
                     src="assets/imgs/projects/octoplusbank.png"
                     class="img-fluid mt-3 rounded"
@@ -102,6 +124,153 @@
                     alt="Imagem do projeto OctoplusBank"
                   />
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+              >
+                Octagro - ERP para entrada e controle de grãos (2023)
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionProjetosAcademicos"
+            >
+              <div class="accordion-body">
+                <p>
+                  <strong>Descrição do projeto:</strong><br />
+                  Sistema ERP voltado para a gestão de entrada de mercadorias, focado no controle de pedidos,
+                  fornecedores, produtos e usuários em ambientes agrícolas. Possui diferentes perfis de acesso
+                  (administrador, recebedor, analista e aprovador), cada um com suas respectivas
+                  funcionalidades de cadastro, atualização e análise de informações. A solução é composta por
+                  uma API RESTful e uma aplicação web SPA (Single Page Application).
+                </p>
+                <p>
+                  <strong>Tecnologias:</strong><br />
+                  Node.js, Express.js, Sequelize (ORM), MySQL, React.js, React Router DOM, Context API, CORS,
+                  express-session, express-flash, Body-Parser, Session File Store
+                </p>
+                <p>
+                  <strong>Minhas contribuições:</strong><br />
+                  No projeto OctAgro, fui responsável por grande parte do desenvolvimento do front-end,
+                  criando e estilizando diversos componentes React para os perfis de administrador, analista,
+                  recebedor e aprovador. Implementei funcionalidades como formulários dinâmicos, máscaras de
+                  input, integração com APIs, barra de pesquisa e modais de cadastro e atualização de
+                  registros. Também atuei corrigindo bugs de integração e otimizando a comunicação entre
+                  frontend e backend para uma melhor experiência do usuário.
+                </p>
+                <a href="https://github.com/jeejdev/OctAgro-API" target="_blank">
+                  <img
+                    src="assets/imgs/projects/octagro.png"
+                    class="img-fluid mt-3 rounded"
+                    style="max-width: 50%; cursor: pointer"
+                    alt="Imagem do projeto Octagro"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-success" role="alert">Projetos Pessoais</div>
+
+        <div class="accordion" id="accordionProjetosPessoais">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingPersonal1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsePersonal1"
+              >
+                Honey Cousins - Website de Guild (2025)
+              </button>
+            </h2>
+            <div
+              id="collapsePersonal1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionProjetosPessoais"
+            >
+              <div class="accordion-body">
+                <p>
+                  <strong>Descrição do projeto:</strong><br />
+                  Site institucional desenvolvido para a guilda <em>Honey Cousins</em> no jogo
+                  <em>Arise CrossOver</em>, reunindo ferramentas úteis como calculadoras de dano, rankings,
+                  tabelas de relíquias e mídias. Focado na identidade visual da guilda e na experiência dos
+                  membros.
+                </p>
+                <p>
+                  <strong>Tecnologias:</strong><br />
+                  HTML5, CSS3, JavaScript, Bootstrap, Deploy na Vercel
+                </p>
+                <p>
+                  <strong>Minhas contribuições:</strong><br />
+                  Desenvolvimento completo do site, desde a estruturação do layout responsivo até a
+                  implementação das funcionalidades em JavaScript. <br />
+                  Criação de design customizado, integração de imagens e organização de seções dinâmicas para
+                  melhorar a interação dos usuários.
+                </p>
+                <a href="https://honeycousins.vercel.app/" target="_blank">
+                  <img
+                    src="assets/imgs/projects/honeycousins.png"
+                    class="img-fluid mt-3 rounded"
+                    style="max-width: 50%; cursor: pointer"
+                    alt="Imagem do projeto Honey Cousins"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção: Experiência Profissional -->
+      <section id="experiencia" class="mb-5">
+        <h2 class="mb-4">Experiência Profissional</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Desenvolvedor de Software - Estágio de Inovação</h5>
+                <h6 class="card-subtitle mb-2 text-muted">SIATT - São José dos Campos/SP</h6>
+                <p class="card-text"><strong>04/2024 - (emprego atual)</strong></p>
+                <ul>
+                  <li>Estágio de desenvolvimento FullStack no departamento de Inovação.</li>
+                  <li>
+                    Criação de features para uma aplicação MVP de gerenciamento de projetos (WBS) (Java e
+                    React).
+                  </li>
+                  <li>
+                    Desenvolvimento e implantação de uma aplicação mobile para gerenciar dailys (Flutter e
+                    Laravel).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Desenvolvedor de Software</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Midiasim Web Criação e Desenvolvimento LTDA - São José dos Campos/SP
+                </h6>
+                <p class="card-text"><strong>07/2023 - 04/2024</strong></p>
+                <ul>
+                  <li>Desenvolvimento de SAC para uma cooperativa usando PHP e Laravel.</li>
+                  <li>Sistema de Rentabilidade utilizando Bootstrap e JavaScript (Chart.js).</li>
+                  <li>Integração de API de geração de leads com e-commerce.</li>
+                  <li>Ajustes e manutenção em sistema legado (PHP puro).</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -128,7 +297,7 @@
             <ul>
               <li>
                 <strong>Hard Skills:</strong> React, Flutter, Node.js, Java, Python, Spring Boot, MongoDB,
-                PostgreSQL, MySQL, Firebase, AWS, YOLO, Roboflow, Git, Figma
+                PostgreSQL, MySQL, Firebase, AWS, YOLO, Roboflow, Git, Figma, Inglês Intermediário
               </li>
               <li>
                 <strong>Soft Skills:</strong> Comunicação assertiva, Trabalho em equipe, Resiliência,
@@ -165,7 +334,6 @@
 
     <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // Scroll suave
       document.querySelectorAll('a.nav-link[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault()
@@ -176,7 +344,6 @@
         })
       })
 
-      // Realce do item ativo da navbar com base no scroll
       const sections = document.querySelectorAll("section")
       const navLinks = document.querySelectorAll(".nav-link")
 
@@ -195,7 +362,6 @@
           }
         })
 
-        // Botão "voltar ao topo"
         const btnTop = document.getElementById("btn-top")
         btnTop.style.display = window.scrollY > 300 ? "block" : "none"
       })
@@ -203,19 +369,8 @@
       document.getElementById("btn-top").addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" })
       })
-    </script>
-    <script>
-      const texts = [
-        "Hola Mundo!",
-        "Bonjour le Monde!",
-        "Hallo Welt!",
-        "Ciao Mondo!",
-        "Olá Mundo!",
-        "こんにちは世界！",
-        "안녕하세요 세계!",
-        "你好，世界！",
-        "Hello World!",
-      ]
+
+      const texts = ["Olá Mundo!", "Hello World!"]
       let i = 0
       setInterval(() => {
         const textEl = document.getElementById("hello-text")
